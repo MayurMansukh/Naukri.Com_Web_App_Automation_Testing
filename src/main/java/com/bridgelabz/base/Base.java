@@ -11,7 +11,7 @@ import org.testng.annotations.*;
 import java.util.concurrent.TimeUnit;
 
 public class Base {
-    public WebDriver driver;
+    public static WebDriver driver;
     public static Logger logger = Logger.getLogger(Base.class);
     checkInternerConnection connection = new checkInternerConnection();
     TestExcutionRecording record = new TestExcutionRecording();

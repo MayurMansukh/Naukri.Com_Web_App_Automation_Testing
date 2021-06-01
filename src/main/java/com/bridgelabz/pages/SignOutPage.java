@@ -29,7 +29,7 @@ public class SignOutPage extends Base {
     }
 
     public void Signout_btn() {
-        logger.info("click login button");
+        logger.info("click logout button");
         try {
             // These coordinates are screen coordinates
             int xCoord = 1117;
@@ -40,7 +40,7 @@ public class SignOutPage extends Base {
             // Move the cursor
             Robot robot = new Robot();
             robot.mouseMove(xCoord, yCoord);
-            robot.delay(4000);
+            robot.delay(2000);
             robot.mouseMove(xCoord2, yCoord2);
             robot.mousePress(InputEvent.BUTTON1_DOWN_MASK);
             robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
