@@ -32,7 +32,7 @@ public class Base {
     public void teardown() throws ATUTestRecorderException {
         record.endRecording(); // test excution end recording
         //driver.quit();
-        driver.close();
+        //driver.close();
 
 
     }
