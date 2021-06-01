@@ -8,6 +8,7 @@ package com.bridgelabz.test;
 import com.bridgelabz.base.Base;
 import com.bridgelabz.listener.CustomListener;
 import com.bridgelabz.pages.*;
+import com.bridgelabz.utils.ExtentReport;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;

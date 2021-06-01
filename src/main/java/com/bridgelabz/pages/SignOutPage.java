@@ -40,7 +40,7 @@ public class SignOutPage extends Base {
             // Move the cursor
             Robot robot = new Robot();
             robot.mouseMove(xCoord, yCoord);
-            robot.delay(2000);
+            robot.delay(5000);
             robot.mouseMove(xCoord2, yCoord2);
             robot.mousePress(InputEvent.BUTTON1_DOWN_MASK);
             robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);

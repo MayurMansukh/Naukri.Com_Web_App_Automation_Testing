@@ -11,10 +11,12 @@ import org.testng.annotations.*;
 import java.util.concurrent.TimeUnit;
 
 public class Base {
+
     public static WebDriver driver;
     public static Logger logger = Logger.getLogger(Base.class);
     checkInternerConnection connection = new checkInternerConnection();
     TestExcutionRecording record = new TestExcutionRecording();
+    ExtentReport extentReport = new ExtentReport();
 
     @BeforeTest
     public void setup() throws ATUTestRecorderException {
@@ -22,19 +24,18 @@ public class Base {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-        connection.check_internet_connectivity(); // check internet connection
-        record.startRecording(); // test excution start recording
-        PropertyConfigurator.configure("log4j.properties");
         driver.get("https://www.naukri.com/");
 
+        connection.check_internet_connectivity(); // check internet connection
+        record.startRecording(); // test excution start recording
+        extentReport.startTest();
+        PropertyConfigurator.configure("log4j.properties");
     }
 
     @AfterTest
-    public void teardown() throws ATUTestRecorderException {
+    public void teardown() throws Exception {
         record.endRecording(); // test excution end recording
-        //driver.quit();
-        //driver.close();
-
-
+        extentReport.endTest();
+        driver.close();
     }
 }
