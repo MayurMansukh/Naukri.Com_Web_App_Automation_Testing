@@ -24,6 +24,7 @@ public class Base {
         driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
         connection.check_internet_connectivity(); // check internet connection
         record.startRecording(); // test excution start recording
+        PropertyConfigurator.configure("log4j.properties");
         driver.get("https://www.naukri.com/");
 
     }

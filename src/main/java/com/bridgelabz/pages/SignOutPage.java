@@ -1,5 +1,11 @@
+/**
+ * Description : automate the logout button using robot class
+ * Author      : Mayur Mansukh
+ * Date        : 1/6/21
+ */
 package com.bridgelabz.pages;
 
+import com.bridgelabz.base.Base;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -8,7 +14,7 @@ import java.awt.*;
 import java.awt.event.InputEvent;
 
 
-public class SignOutPage {
+public class SignOutPage extends Base {
 
     public WebDriver driver;
 
@@ -23,6 +29,7 @@ public class SignOutPage {
     }
 
     public void Signout_btn() {
+        logger.info("click login button");
         try {
             // These coordinates are screen coordinates
             int xCoord = 1117;

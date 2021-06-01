@@ -40,16 +40,19 @@ public class LoginPage extends Base {
     }
 
     public boolean enter_username(String id) {
+        logger.info("Entering username");
         email_txt.sendKeys(id);
         return true;
     }
 
     public boolean enter_password(String pass)  {
+        logger.info("Entering password");
         password_txt.sendKeys(pass);
         return true;
     }
 
     public void click_signIn_btn() {
+        logger.info("click login button");
         Sign_in_Btn.click();
     }
 
