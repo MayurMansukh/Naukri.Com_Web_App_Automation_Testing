@@ -102,3 +102,7 @@
 [main] INFO  com.bridgelabz.base.Base  - Entering password
 [main] INFO  com.bridgelabz.base.Base  - click login button
 [main] INFO  com.bridgelabz.base.Base  - click logout button
+[main] INFO  com.bridgelabz.base.Base  - Entering username
+[main] INFO  com.bridgelabz.base.Base  - Entering password
+[main] INFO  com.bridgelabz.base.Base  - click login button
+[main] INFO  com.bridgelabz.base.Base  - click logout button
