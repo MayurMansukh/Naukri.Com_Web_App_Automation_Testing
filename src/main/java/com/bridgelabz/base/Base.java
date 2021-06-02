@@ -1,12 +1,16 @@
-package com.bridgelabz.base;
+package com.bridgelabz.BASE;
 
 import atu.testrecorder.exceptions.ATUTestRecorderException;
-import com.bridgelabz.utils.*;
+import com.bridgelabz.utils.ExtentReport;
+import com.bridgelabz.utils.TestExcutionRecording;
+import com.bridgelabz.utils.checkInternerConnection;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.apache.log4j.*;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 
 import java.util.concurrent.TimeUnit;
 
@@ -24,7 +28,7 @@ public class Base {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-        driver.get("https://www.naukri.com/");
+        driver.get("https://www.amazon.in/");
 
         connection.check_internet_connectivity(); // check internet connection
         record.startRecording(); // test excution start recording
