@@ -28,7 +28,7 @@ public class SignOutPage extends Base {
 
     }
 
-    public void Signout_btn() {
+    public boolean Signout_btn() {
         logger.info("click logout button");
         try {
             // These coordinates are screen coordinates
@@ -39,15 +39,16 @@ public class SignOutPage extends Base {
 
             // Move the cursor
             Robot robot = new Robot();
+            robot.delay(7000);
             robot.mouseMove(xCoord, yCoord);
             robot.delay(5000);
             robot.mouseMove(xCoord2, yCoord2);
             robot.mousePress(InputEvent.BUTTON1_DOWN_MASK);
             robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
-            robot.delay(7000);
-
+            robot.delay(5000);
         } catch (AWTException e) {
             e.printStackTrace();
         }
+        return true;
     }
 }

@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default Suite" duration-ms="51349" started-at="2021-06-02T02:07:36 IST" finished-at="2021-06-02T02:08:27 IST">
+  <suite name="Default Suite" duration-ms="49028" started-at="2021-06-02T11:49:54 IST" finished-at="2021-06-02T11:50:43 IST">
     <groups>
     </groups>
-    <test name="Naukri.com_Web_Application" duration-ms="51349" started-at="2021-06-02T02:07:36 IST" finished-at="2021-06-02T02:08:27 IST">
+    <test name="Naukri.com_Web_Application" duration-ms="49028" started-at="2021-06-02T11:49:54 IST" finished-at="2021-06-02T11:50:43 IST">
       <class name="com.bridgelabz.test.LoginModuleTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.bridgelabz.test.LoginModuleTest@2b552920]" name="setup" is-config="true" duration-ms="25281" started-at="2021-06-02T02:07:36 IST" finished-at="2021-06-02T02:08:01 IST">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.bridgelabz.test.LoginModuleTest@2b552920]" name="setup" is-config="true" duration-ms="21296" started-at="2021-06-02T11:49:54 IST" finished-at="2021-06-02T11:50:15 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginPagetest()[pri:0, instance:com.bridgelabz.test.LoginModuleTest@2b552920]" name="loginPagetest" duration-ms="8856" started-at="2021-06-02T02:08:01 IST" finished-at="2021-06-02T02:08:10 IST">
+        <test-method status="PASS" signature="loginPagetest()[pri:0, instance:com.bridgelabz.test.LoginModuleTest@2b552920]" name="loginPagetest" duration-ms="8463" started-at="2021-06-02T11:50:16 IST" finished-at="2021-06-02T11:50:24 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPagetest -->
-        <test-method status="PASS" signature="logoutPageTest()[pri:1, instance:com.bridgelabz.test.LoginModuleTest@2b552920]" name="logoutPageTest" duration-ms="12818" started-at="2021-06-02T02:08:10 IST" finished-at="2021-06-02T02:08:23 IST">
+        <test-method status="PASS" signature="logoutPageTest()[pri:1, instance:com.bridgelabz.test.LoginModuleTest@2b552920]" name="logoutPageTest" duration-ms="14994" started-at="2021-06-02T11:50:24 IST" finished-at="2021-06-02T11:50:39 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutPageTest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.bridgelabz.test.LoginModuleTest@2b552920]" name="teardown" is-config="true" duration-ms="4073" started-at="2021-06-02T02:08:23 IST" finished-at="2021-06-02T02:08:27 IST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.bridgelabz.test.LoginModuleTest@2b552920]" name="teardown" is-config="true" duration-ms="3915" started-at="2021-06-02T11:50:39 IST" finished-at="2021-06-02T11:50:43 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

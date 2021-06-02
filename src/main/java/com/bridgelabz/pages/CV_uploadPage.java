@@ -1,15 +1,13 @@
 package com.bridgelabz.pages;
 
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
+import com.bridgelabz.base.Base;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.*;
 import java.awt.*;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 
-public class FileUpload_By_RobotClass {
+public class CV_uploadPage extends Base {
     public WebDriver driver;
     Robot robot;
 
@@ -38,15 +36,17 @@ public class FileUpload_By_RobotClass {
     WebElement skip_btn;
 
 
-    public FileUpload_By_RobotClass(WebDriver driver) throws AWTException {
+    public CV_uploadPage(WebDriver driver) throws AWTException {
         this.driver = driver;
         PageFactory.initElements(driver, this);
         robot = new Robot();
     }
 
     public void uploadFile() {
+        logger.info("upload file");
+        robot.delay(500);
         uploadBtn.click();
-        robot.setAutoDelay(500);
+        robot.delay(500);
         StringSelection ss = new StringSelection("C:\\Users\\admin\\Downloads\\ManualTesting.pdf");
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
         robot.keyPress(KeyEvent.VK_CONTROL);
@@ -61,24 +61,18 @@ public class FileUpload_By_RobotClass {
     }
 
     public void register() {
-        robot.delay(500);
+        logger.info("enter registration details");
         name.sendKeys("MayurMansukh");
-        email.sendKeys("MansukhMayur99@mail007.com");
+        email.sendKeys("MansukhMayur99@gmail009.com");
         mobile.sendKeys("9189770098");
-
         experience.click();
         robot.keyPress(KeyEvent.VK_DOWN);
         robot.keyRelease(KeyEvent.VK_DOWN);
         robot.keyPress(KeyEvent.VK_ENTER);
         robot.keyRelease(KeyEvent.VK_ENTER);
-
-
         password.sendKeys("Mansukh1@2");
         submit.click();
         robot.delay(7000);
-
-//        Alert alert = driver.switchTo().alert();
-//        alert.accept();
 
     }
 }
