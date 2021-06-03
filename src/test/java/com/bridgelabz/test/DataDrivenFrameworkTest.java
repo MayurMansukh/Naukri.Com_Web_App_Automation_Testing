@@ -18,7 +18,7 @@ public class DataDrivenFrameworkTest extends Base {
     @Test
     public static void Naukri_Login_With_DataSet() throws IOException, AWTException {
         LoginPage loginObj = new LoginPage(driver);
-        SignOutPage signOutPage = new SignOutPage(driver);
+        SignOutPage signOutPage = new SignOutPage();
         DataDrivenMethod dataDriven = new DataDrivenMethod();
         boolean check;
 

@@ -16,18 +16,6 @@ import java.awt.event.InputEvent;
 
 public class SignOutPage extends Base {
 
-    public WebDriver driver;
-
-    @FindBy(xpath = "")
-    WebElement My_Naukri_Btn;
-
-    //constructor
-    public SignOutPage(WebDriver driver) {
-        this.driver = driver;
-        PageFactory.initElements(driver, this);
-
-    }
-
     public boolean Signout_btn() {
         logger.info("click logout button");
         try {

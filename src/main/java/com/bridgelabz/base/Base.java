@@ -30,7 +30,8 @@ public class Base {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-        driver.get("https://www.naukri.com/");
+        //driver.get("https://www.naukri.com/");
+        driver.get("https://www.spicejet.com/");
 
         connection.check_internet_connectivity(); // check internet connection
         record.startRecording(); // test excution start recording
@@ -43,6 +44,6 @@ public class Base {
         record.endRecording(); // test excution end recording
         extentReport.endTest(); // create extent report
         report.ExcelReport(); // create excel report
-        driver.close();
+        //driver.close();
     }
 }

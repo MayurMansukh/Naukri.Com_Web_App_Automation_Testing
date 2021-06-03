@@ -1,3 +1,8 @@
+/**
+ * Description : add Excel report method
+ * Author      : Mayur Mansukh
+ * Date        : 3/6/21
+ */
 package com.bridgelabz.utils;
 
 import org.automationtesting.excelreport.Xl;

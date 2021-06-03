@@ -28,7 +28,7 @@ public class LoginWithObjectRepoPropertiesFileTest extends Base {
 
     @Test(priority = 1)
     public void logoutPageTest(){
-        SignOutPage signOutPage = new SignOutPage(driver);
+        SignOutPage signOutPage = new SignOutPage();
         signOutPage.Signout_btn();
         Assert.assertEquals(driver.getCurrentUrl(),"https://www.naukri.com/");
 
