@@ -11,7 +11,6 @@ import com.bridgelabz.pages.SignOutPage;
 import com.bridgelabz.utils.DataDrivenMethod;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.testng.annotations.Test;
-
 import java.awt.*;
 import java.io.IOException;
 

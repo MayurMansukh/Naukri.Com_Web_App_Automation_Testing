@@ -1,6 +1,7 @@
 package com.bridgelabz.base;
 
 import atu.testrecorder.exceptions.ATUTestRecorderException;
+import com.bridgelabz.utils.ExcelReport;
 import com.bridgelabz.utils.ExtentReport;
 import com.bridgelabz.utils.TestExcutionRecording;
 import com.bridgelabz.utils.checkInternerConnection;
@@ -21,6 +22,7 @@ public class Base {
     checkInternerConnection connection = new checkInternerConnection();
     TestExcutionRecording record = new TestExcutionRecording();
     ExtentReport extentReport = new ExtentReport();
+    ExcelReport report = new ExcelReport();
 
     @BeforeTest
     public void setup() throws ATUTestRecorderException {
@@ -39,7 +41,8 @@ public class Base {
     @AfterTest
     public void teardown() throws Exception {
         record.endRecording(); // test excution end recording
-        extentReport.endTest();
+        extentReport.endTest(); // create extent report
+        report.ExcelReport(); // create excel report
         driver.close();
     }
 }
