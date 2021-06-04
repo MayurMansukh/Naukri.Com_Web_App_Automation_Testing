@@ -3,6 +3,7 @@ package com.bridgelabz.pages;
 import com.bridgelabz.base.Base;
 import com.bridgelabz.utils.FileUploadPopup;
 import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.*;
 import java.awt.*;
 import java.awt.datatransfer.StringSelection;
@@ -55,7 +56,7 @@ public class Cvupload_register_page extends Base {
     public void register() {
         logger.info("enter registration details");
         name.sendKeys("MayurMansukh");
-        email.sendKeys("MansukhMayur99@gmail009.com");
+        email.sendKeys("MansukhMayur99@gmai32.com");
         mobile.sendKeys("9189770098");
         experience.click();
         robot.keyPress(KeyEvent.VK_DOWN);
@@ -65,7 +66,6 @@ public class Cvupload_register_page extends Base {
         password.sendKeys("Mansukh1@2");
         submit.click();
         robot.delay(7000);
-
     }
 }
 
