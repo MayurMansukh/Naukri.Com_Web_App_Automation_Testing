@@ -1,3 +1,8 @@
+/**
+ * Description : add Naukri.com web CvUpload locators and methods
+ * Author      : Mayur Mansukh
+ * Date        : 2/6/21
+ */
 package com.bridgelabz.pages;
 
 import com.bridgelabz.base.Base;

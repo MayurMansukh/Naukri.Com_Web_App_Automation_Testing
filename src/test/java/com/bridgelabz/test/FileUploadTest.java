@@ -1,3 +1,8 @@
+/**
+ * Description : automate the file upload using StringSelection method
+ * Author      : Mayur Mansukh
+ * Date        : 3/6/21
+ */
 package com.bridgelabz.test;
 
 import com.bridgelabz.base.Base;

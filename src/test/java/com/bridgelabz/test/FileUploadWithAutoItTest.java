@@ -1,3 +1,8 @@
+/**
+ * Description : automate the file upload using autoIt script
+ * Author      : Mayur Mansukh
+ * Date        : 4/6/21
+ */
 package com.bridgelabz.test;
 
 import com.bridgelabz.base.Base;
